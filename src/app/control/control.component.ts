@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MathService } from '../service/math.service';
 
 @Component({
   selector: 'app-control',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ControlComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+  public cuenta : MathService,    
+  ) { }
 
   ngOnInit() {
+    this.cuenta.hacerCuenta (8,8);
   }
 
 }
