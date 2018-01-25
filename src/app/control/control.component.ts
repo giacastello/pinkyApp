@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Renderer2 } from '@angular/core';
 import { MathService } from '../service/math.service';
 
 @Component({
@@ -7,13 +7,19 @@ import { MathService } from '../service/math.service';
   styleUrls: ['./control.component.css']
 })
 export class ControlComponent implements OnInit {
+  @Input ('size') size: number = 30; // @decorador ('variable') variable:tipo = datodefaultparacambiar.s
 
   constructor(
-  public cuenta : MathService,    
+  public cuenta : MathService,   
+  public renderer : Renderer2
+ 
   ) { }
 
   ngOnInit() {
     this.cuenta.hacerCuenta (8,8);
+    this.renderer.listen('document','mousemove',()=>{
+    })
+    this.renderer.createText(;
   }
 
 }
