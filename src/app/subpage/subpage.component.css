@@ -1,0 +1,14 @@
+.one{
+    background-color: rgb(214, 80, 196);
+    width: 300px;
+    height: 200px;
+    position: absolute; /* Es lo que nos permite tener acceso desde el ts*/
+}
+
+.gato{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-size: cover;
+    background-image: url('../../assets/octocat.gif');
+}

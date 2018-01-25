@@ -19,7 +19,7 @@ export class ControlComponent implements OnInit {
     this.cuenta.hacerCuenta (8,8);
     this.renderer.listen('document','mousemove',()=>{
     })
-    this.renderer.createText(;
+    
   }
 
 }
