@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Renderer2, ViewChild } from '@angular/core';
 import { MathService } from '../service/math.service';
+import { GraficosService } from '../service/graficos.service';
 
 @Component({
   selector: 'app-control',
@@ -15,6 +16,7 @@ export class ControlComponent implements OnInit {
 
   constructor(
   public cuenta : MathService,   
+  public grafico : GraficosService,
   public renderer : Renderer2
  
   ) { }
