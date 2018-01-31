@@ -21,7 +21,7 @@ export class SubpageComponent implements OnInit {
   ngOnChanges() { //esta funcion se va a ejecutar antes del ngOnInit siempre y cuando se cumplan las siguientes condiciones
   } 
 
-  ngOnInit() {
+  ngOnInit() { /* Se ejecuta una vez sola después de un constructor*/
     let this_=this;
     this.grafico.moverObjeto(10,10);
     //esta función llama al objeto renderer2. y a la función listen (objeto a escuchar, listener , funcion a ejecutar)
