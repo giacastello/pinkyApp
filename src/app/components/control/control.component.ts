@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Renderer2, ViewChild } from '@angular/core';
-import { MathService } from '../service/math.service';
-import { GraficosService } from '../service/graficos.service';
+import { MathService } from '../../service/math.service';
+import { GraficosService } from '../../service/graficos.service';
 
 @Component({
   selector: 'app-control',

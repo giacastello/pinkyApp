@@ -10,5 +10,5 @@
     height: 300px;
     margin: 0 auto;
     background-size: cover;
-    background-image: url('../../assets/octocat.gif');
+    background-image: url('../../../assets/octocat.gif');
 }

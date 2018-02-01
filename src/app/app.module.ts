@@ -6,16 +6,17 @@ import { NgModule } from '@angular/core'; // traemos el objeto del core.
 
 //imports que necesita mi aplicación
 import { AppComponent } from './app.component';
-import { SubpageComponent } from './subpage/subpage.component'; 
+import { SubpageComponent } from './components/subpage/subpage.component'; 
 import { GraficosService } from './service/graficos.service';
-import { ControlComponent } from './control/control.component';
+import { ControlComponent } from './components/control/control.component';
 import { MathService } from './service/math.service';
-import { ResaltarDirective } from './resaltar.directive';
+import { ResaltarDirective } from './directives/resaltar.directive';
+import { FiltroPipe } from './pipes/filtro.pipe';
 
 
 @NgModule({ // objeto del core.
   declarations: [ // declaraciones, componentes, directivas, pipes se llaman aquí. Angular CLI automáticamente las suma acá desde comandos de la terminal.
-    AppComponent, SubpageComponent, ControlComponent, ResaltarDirective
+    AppComponent, SubpageComponent, ControlComponent, ResaltarDirective, FiltroPipe
   ],
   imports: [ // Los imports que necesita el módulo app
     BrowserModule

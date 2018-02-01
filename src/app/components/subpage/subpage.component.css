@@ -5,10 +5,14 @@
     position: absolute; /* Es lo que nos permite tener acceso desde el ts*/
 }
 
+h2{
+    color: white;
+}
+
 .gato{
     width: 300px;
     height: 300px;
     margin: 0 auto;
     background-size: cover;
-    background-image: url('../../assets/octocat.gif');
+    background-image: url('../../../assets/octocat.gif');
 }
